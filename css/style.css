@@ -39,6 +39,10 @@
   margin-bottom: 60px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 body {
   font-family: "Barlow";
   background: linear-gradient(180deg, #DBF6FF 21.88%, #FEF0FF 100%);
@@ -322,6 +326,7 @@ body {
   border-radius: 35px;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 80px;
   padding: 35px;
   z-index: 2;
 }
@@ -391,7 +396,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 0 124px 0;
+  padding: 50px 0 40px 0;
   margin-bottom: 75px;
 }
 .card-content .card-content__title {
@@ -473,6 +478,11 @@ body {
   line-height: 36px;
   color: #FFFFFF;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .card-content .card-content__description .description__content > p {
+    text-align: center;
+  }
+}
 .card-content .card-content__description .description__content .description__content--times {
   font-weight: 500;
   font-size: 32px;
@@ -480,10 +490,20 @@ body {
   color: #FFFFFF;
   margin-bottom: 6px;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .card-content .card-content__description .description__content .description__content--times {
+    text-align: center;
+  }
+}
 .card-content .card-content__description .description__content .description__content--times > span {
   color: #FF2E82;
   font-size: 36px;
   font-weight: 600;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .card-content .card-content__description .description__content .description__content--times > span {
+    font-size: 40px;
+  }
 }
 .card-content .card-content__welcome {
   width: 100%;
@@ -617,7 +637,7 @@ body {
 }
 @-webkit-keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff0a54, 0 0 80px #ff0a54, 0 0 90px #ff0a54, 0 0 100px #ff0a54, 0 0 150px #ff0a54;
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff0a54, 0 0 80px #ff0a54, 0 0 90px #ff0a54;
   }
   20%, 24%, 55% {
     text-shadow: none;
@@ -625,7 +645,7 @@ body {
 }
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff0a54, 0 0 80px #ff0a54, 0 0 90px #ff0a54, 0 0 100px #ff0a54, 0 0 150px #ff0a54;
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #ff0a54, 0 0 80px #ff0a54, 0 0 90px #ff0a54;
   }
   20%, 24%, 55% {
     text-shadow: none;

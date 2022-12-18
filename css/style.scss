@@ -48,6 +48,10 @@
     margin-bottom: 60px;
 }
 
+.mt-40 {
+    margin-top: 40px;
+}
+
 body {
     font-family: 'Barlow';
     background: linear-gradient(180deg, #DBF6FF 21.88%, #FEF0FF 100%);
@@ -358,6 +362,7 @@ body {
     border-radius: 35px;
     margin: auto;
     margin-bottom: 30px;
+    margin-top: 80px;
     padding: 35px;
     z-index: 2;
 
@@ -433,7 +438,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 0 124px 0;
+    padding: 50px 0 40px 0;
     margin-bottom: 75px;
 
     .card-content__title {
@@ -469,7 +474,7 @@ body {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
-        
+
         @media screen and (min-width: 321px) and (max-width: 768px) { 
             width: 100%;
             height: 140px;
@@ -516,6 +521,10 @@ body {
                 font-size: 32px;
                 line-height: 36px;
                 color: #FFFFFF;
+
+                @media screen and (min-width: 321px) and (max-width: 768px) { 
+                    text-align: center;
+                }
             }
 
             .description__content--times {
@@ -525,10 +534,18 @@ body {
                 color: #FFFFFF;
                 margin-bottom: 6px;
 
+                @media screen and (min-width: 321px) and (max-width: 768px) { 
+                    text-align: center;
+                }
+
                 & > span {
                     color: #FF2E82;
                     font-size: 36px;
                     font-weight: 600;
+
+                    @media screen and (min-width: 321px) and (max-width: 768px) { 
+                        font-size: 40px;
+                    }
                 }
             }
         }
@@ -616,10 +633,7 @@ body {
         0 0 19px #fff,
         0 0 40px #ff0a54,
         0 0 80px #ff0a54,
-        0 0 90px #ff0a54,
-        0 0 100px #ff0a54,
-        0 0 150px #ff0a54;
-    
+        0 0 90px #ff0a54;
     }
     
     20%, 24%, 55% {        
