@@ -4,6 +4,7 @@ $light-gray: #C4C4C4;
 $dark-gray: #e4e4e4;
 $white: #ffffff;
 $black: #000000;
+$blue: #004693;
 $blue-acl: #023670;
 $blue-light: #E9F3FF;
 $blue-deep: #012D5E;
@@ -109,6 +110,59 @@ body {
     }
 }
 
+#button-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF9800;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    & > img {
+        width: 26px;
+    }
+
+    &::hover {
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    &::active {
+        background-color: #555;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+.slider__button,
+.swiper-button-next, .swiper-button-prev {
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+
+    &::after {
+         color: $white;
+         font-size: 24px !important;
+    }
+
+    &:hover {
+        background: $blue-deep;
+    }
+}
+
 .header-wrap {
     width: 100%;
     height: 100%;
@@ -152,7 +206,7 @@ body {
                 padding: 0px 20px;
 
                 &.active {
-                    background: #004693;
+                    background: $blue;
                     border-radius: 40px;
 
                     & > a { color: $white; }
@@ -176,8 +230,8 @@ body {
             h1 {
                 width: 100%;
                 font-weight: 700;
-                font-size: 40px;
-                line-height: 54px;
+                font-size: 36px;
+                line-height: 46px;
                 margin-bottom: 20px;
 
                 @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -188,7 +242,7 @@ body {
             }
 
             p {
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 24px;
                 line-height: 40px;
                 margin-bottom: 40px;
@@ -235,7 +289,7 @@ body {
     .about-background {
         position: absolute;
         right: 0px;
-        top: 0;
+        top: -130px;
         opacity: 0.1;
 
         @media screen and (min-width: 321px) and (max-width: 768px) {  
@@ -246,17 +300,17 @@ body {
     .about-wrap__title {
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
 
         & > h2 {
             font-weight: 700;
-            font-size: 45px;
-            line-height: 66px;
-            letter-spacing: -0.015em;
+            font-size: 36px;
+            line-height: 46px;
             color: $blue-deep;
 
             @media screen and (min-width: 321px) and (max-width: 768px) {  
                 font-size: 24px;
-                line-height: 36px;  
+                line-height: 34px;  
             }
         }
 
@@ -269,8 +323,8 @@ body {
 
     .about-wrap__content {
         font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 22px;
         letter-spacing: 0.032em;
         color: $blue-black;
         margin-bottom: 40px;
@@ -299,6 +353,7 @@ body {
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        height: 445px;
         background: $white;
         border: 1px solid $light-gray;
         border-radius: 20px;
@@ -306,6 +361,7 @@ body {
         margin-bottom: 40px;
 
         @media screen and (min-width: 321px) and (max-width: 768px) {  
+            height: auto;
             padding: 20px;
             margin-bottom: 20px;
         }
@@ -321,8 +377,8 @@ body {
 
         .about-wrap__card--title {
             font-weight: 700;
-            font-size: 30px;
-            line-height: 48px;
+            font-size: 28px;
+            line-height: 36px;
             letter-spacing: -0.015em;
             color: $blue-black;
             margin-bottom: 20px;
@@ -336,7 +392,7 @@ body {
 
         & > p {
             font-weight: 400;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 150%;
             letter-spacing: 0.032em;
             color: $gray;
@@ -380,10 +436,11 @@ body {
 
     .learning-wrap__title {
         font-weight: 600;
-        font-size: 45px;
-        line-height: 55px;
+        font-size: 36px;
+        line-height: 46px;
         text-align: center;
         color: $white;
+        text-transform: capitalize;
         margin: auto;
         margin-bottom: 40px;
 
@@ -406,7 +463,7 @@ body {
     .learning-card {
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 550px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -452,9 +509,10 @@ body {
         .learning-card__list-learn {
             ul li {
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 150%;
                 color: $gray;
+                white-space: nowrap;
                 margin-bottom: 10px;
 
                 @media screen and (min-width: 321px) and (max-width: 768px) {  
@@ -517,8 +575,8 @@ body {
 
     .team-wrap_title {
         font-weight: 600;
-        font-size: 45px;
-        line-height: 59px;
+        font-size: 36px;
+        line-height: 46px;
         text-align: center;
         color: $blue-deep;
         margin: auto;
@@ -527,7 +585,7 @@ body {
 
         @media screen and (min-width: 321px) and (max-width: 768px) {
             font-weight: 600;
-            font-size: 28px;
+            font-size: 24px;
             line-height: 34px;
         }
     }
@@ -555,8 +613,8 @@ body {
 
             .team-card__content--title {
                 font-weight: 600;
-                font-size: 32px;
-                line-height: 39px;
+                font-size: 26px;
+                line-height: 30px;
                 color: $blue-black;
                 margin-bottom: 4px;
 
@@ -624,7 +682,33 @@ body {
     background: $white;
     margin-bottom: 80px;
 
+    .flex-size__form {
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 321px) and (max-width: 768px) {
+            display: block;
+        }
+    }
+
     .contact-wrap__img {
+        width: 100%;
+
+        & > img {
+            height: 660px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            object-fit: cover;
+
+            @media screen and (min-width: 321px) and (max-width: 768px) {
+                width: 100%;
+                height: auto;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+        }
+
         @media screen and (min-width: 321px) and (max-width: 768px) {
             width: 100%;
         }
@@ -651,8 +735,8 @@ body {
             @media screen and (min-width: 321px) and (max-width: 768px) {
                 width: 230px;
                 font-weight: 700;
-                font-size: 20px;
-                line-height: 24px;
+                font-size: 24px;
+                line-height: 34px;
             }
 
             span {
@@ -690,7 +774,8 @@ body {
                     border: none;
 
                     @media screen and (min-width: 321px) and (max-width: 768px) {
-                        
+                        width: 100%;
+                        height: 50px;
                     }
                 }
             }
@@ -716,11 +801,13 @@ footer {
         }
 
         .footer-wrap__about {
-            font-weight: 500;
+            width: 310px;
+            font-weight: 400;
             font-size: 22px;
             line-height: 36px;
 
             @media screen and (min-width: 321px) and (max-width: 768px) {
+                width: 100%;
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 26px;
@@ -767,13 +854,13 @@ footer {
 
         .footer-wrap__contact {
             .contact__info {
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 24px;
                 line-height: 32px;
                 margin-bottom: 20px;
 
                 @media screen and (min-width: 321px) and (max-width: 768px) { 
-                    font-weight: 700;
+                    font-weight: 600;
                     font-size: 20px;
                     line-height: 24px;
                 }
@@ -789,7 +876,7 @@ footer {
                 }
 
                 .contact__items--title {
-                    font-weight: 700;
+                    font-weight: 600;
                     margin-bottom: 4px;
                 }
 
@@ -810,4 +897,11 @@ footer {
     background: $blue-deep;
     text-align: center;
     padding: 10px 0px;
+
+    @media screen and (min-width: 321px) and (max-width: 768px) { 
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
+
