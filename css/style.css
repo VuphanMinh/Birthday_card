@@ -111,11 +111,11 @@ body {
 #button-top > img {
   width: 26px;
 }
-#button-top::hover {
+#button-top:hover {
   cursor: pointer;
   background-color: #333;
 }
-#button-top::active {
+#button-top:active {
   background-color: #555;
 }
 #button-top.show {
@@ -328,6 +328,9 @@ body {
   border-radius: 20px;
   padding: 40px;
   margin-bottom: 40px;
+}
+.about-wrap .about-wrap__card:hover {
+  box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .about-wrap .about-wrap__card {
