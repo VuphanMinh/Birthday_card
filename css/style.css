@@ -130,6 +130,13 @@ body {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .slider__button,
+  .swiper-button-next, .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
 .slider__button::after,
 .swiper-button-next::after, .swiper-button-prev::after {
   color: #ffffff;

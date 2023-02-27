@@ -153,6 +153,11 @@ body {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
 
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
     &::after {
          color: $white;
          font-size: 24px !important;
