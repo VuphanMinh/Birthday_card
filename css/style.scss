@@ -183,14 +183,24 @@ body {
 
         @media screen and (min-width: 321px) and (max-width: 768px) {
             border-radius: 40px;
+            padding: 8px 40px;
         }
 
         .navbar-custom__logo {
             height: 50px;
             object-fit: cover;
 
+            @media screen and (min-width: 321px) and (max-width: 768px) {
+                height: 40px;
+            }
+
             & > img {
                 height: 50px;
+
+                @media screen and (min-width: 321px) and (max-width: 768px) {
+                    height: 40px;
+                }
+    
             }
         }
 

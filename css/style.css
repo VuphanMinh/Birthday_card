@@ -161,6 +161,7 @@ body {
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .header-wrap .navbar-custom {
     border-radius: 40px;
+    padding: 8px 40px;
   }
 }
 .header-wrap .navbar-custom .navbar-custom__logo {
@@ -168,8 +169,18 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .header-wrap .navbar-custom .navbar-custom__logo {
+    height: 40px;
+  }
+}
 .header-wrap .navbar-custom .navbar-custom__logo > img {
   height: 50px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .header-wrap .navbar-custom .navbar-custom__logo > img {
+    height: 40px;
+  }
 }
 .header-wrap .navbar-custom .navbar-custom__collapse {
   flex-grow: 0;
