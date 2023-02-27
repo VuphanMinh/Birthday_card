@@ -32,7 +32,7 @@
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat Alternates", sans-serif;
   background: #E9F3FF;
 }
 
@@ -181,6 +181,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    letter-spacing: 1px;
   }
 }
 .header-wrap .header-wrap__content .header-img {
@@ -237,8 +238,8 @@ body {
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .about-wrap .about-wrap__title > h2 {
-    font-size: 28px;
-    line-height: 46px;
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -279,9 +280,20 @@ body {
   padding: 40px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-wrap .about-wrap__card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
 .about-wrap .about-wrap__card > img {
   height: 100px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-wrap .about-wrap__card > img {
+    height: 60px;
+  }
 }
 .about-wrap .about-wrap__card .about-wrap__card--title {
   font-weight: 700;
@@ -291,12 +303,26 @@ body {
   color: #011933;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-wrap .about-wrap__card .about-wrap__card--title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
 .about-wrap .about-wrap__card > p {
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0.032em;
   color: #1F1F1F;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-wrap .about-wrap__card > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+  }
 }
 
 .learning-wrap {
@@ -308,6 +334,11 @@ body {
   background-position: top;
   background-repeat: repeat-y;
   padding: 80px 0px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .learning-wrap {
+    padding: 40px 0px;
+  }
 }
 .learning-wrap .learning-background {
   position: absolute;
@@ -331,9 +362,21 @@ body {
   margin: auto;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .learning-wrap .learning-wrap__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
 .learning-wrap .learning-path {
   width: 100%;
   margin-bottom: 80px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .learning-wrap .learning-path {
+    margin-bottom: 40px;
+  }
 }
 .learning-wrap .learning-card {
   position: relative;
@@ -347,6 +390,13 @@ body {
   border-radius: 20px;
   padding: 40px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .learning-wrap .learning-card {
+    height: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
 }
 .learning-wrap .learning-card:hover {
   box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
@@ -365,12 +415,26 @@ body {
   color: #012D5E;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .learning-wrap .learning-card .learning-card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 .learning-wrap .learning-card .learning-card__list-learn ul li {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   color: #1F1F1F;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .learning-wrap .learning-card .learning-card__list-learn ul li {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
 }
 .learning-wrap .learning-card .learning-card__content {
   font-weight: 400;
@@ -578,12 +642,18 @@ body {
   line-height: 24px;
   color: #020202;
 }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .contact-wrap .form-wrap > form .form-group > label {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .contact-wrap .form-wrap > form .form-group .form-control__custom {
   height: 50px;
   background: rgba(184, 184, 184, 0.25);
   border-radius: 40px;
+  border: none;
 }
-
 footer {
   background-color: #023670;
   color: #ffffff;
