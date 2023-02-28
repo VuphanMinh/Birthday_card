@@ -39,22 +39,22 @@
               
                 <div class="collapse navbar-collapse navbar-custom__collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Giới Thiệu</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#gioi-thieu">Giới Thiệu</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Khoá học</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Đội Ngũ</a>
+                      <a class="nav-link" href="#khoa-hoc">Khoá học</a>
                     </li>
 
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Liên Hệ</a>
+                      <a class="nav-link" href="#doi-ngu">Đội Ngũ</a>
                     </li>
 
                     <li class="nav-item">
+                      <a class="nav-link" href="#lien-he">Liên Hệ</a>
+                    </li>
+
+                    <li class="nav-item hotline">
                       <a class="btn-custom btn-custom__hotline" href="#">
                         <img src="img/icon/phone.svg" alt="phone" />
                         Hotline
@@ -82,7 +82,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="gioi-thieu">
       <div class="about-wrap">
         <div class="about-background">
           <img src="./img/images/tech-bg.svg" alt="tech-about" />
@@ -117,7 +117,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-md-4">
               <div class="about-wrap__card">
                 <img src="img/icon/computer.svg" alt="computer" />
@@ -141,6 +141,38 @@
                 <p>Nội dung được xây dựng để giúp các bé phát triển tư duy lôgic, giải quyết vấn đề và bồi dưỡng năng lực sáng tạo</p>
               </div>
             </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-wrap__card" id="skills">
+                <div class="about-wrap__card__icon">
+                  <img src="img/icon/computer-circle.svg" alt="computer" />
+                </div>
+                <div class="about-wrap__card--title">Trang bị kỹ năng cho tương lai</div>
+                <p>Nội dung được xây dựng để giúp các bé phát triển tư duy lôgic, giải quyết vấn đề và bồi dưỡng năng lực sáng tạo</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-wrap__card active" id="business">
+                <div class="about-wrap__card__icon">
+                  <img src="img/icon/business-plan-circle.svg" alt="computer" />
+                </div>
+                <div class="about-wrap__card--title">Lộ trình học tập dài hạn</div>
+                <p>Lộ trình học bài bản và dài hạn phù hợp với từng độ tuổi, năng lực và định hướng của các bé</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="about-wrap__card" id="goal">
+                <div class="about-wrap__card__icon">
+                  <img src="img/icon/victory-circle.svg" alt="computer" />
+                </div>
+                <div class="about-wrap__card--title">Đội ngũ giảng dạy giàu <br/>kinh nghiệm</div>
+                <p>Nội dung được xây dựng để giúp các bé phát triển tư duy lôgic, giải quyết vấn đề và bồi dưỡng năng lực sáng tạo</p>
+              </div>
+            </div>
           </div>
 
           <a href="#" class="btn-custom btn-custom__register m-auto">Đăng ký ngay</a>
@@ -148,7 +180,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="khoa-hoc">
       <div class="learning-wrap">
         <div class="learning-background">
           <img src="./img/images/plain-line.svg" alt="plain"/>
@@ -271,7 +303,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="doi-ngu">
       <div class="team-wrap">
         <div class="team-background-1">
           <img src="img/images/tech-bg.svg" alt="tech-bg" />
@@ -342,7 +374,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="lien-he">
       <div class="container">
         <div class="contact-wrap">
           <div class="row">
@@ -490,6 +522,53 @@
       btn.on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({scrollTop:0}, '300');
+      });
+
+      $(document).ready(function(){
+        // Call the event handler on #skills
+        $("#skills").hover(function(){
+          /* 
+          Hover alows a mouseenter and mouse leave event
+          seperated by a comma
+          */
+          
+          //Event one mouse enter add class
+          $("#skills").addClass("active");
+        },
+          // Event two mouse out remove class               
+        function(){
+          $("#skills").removeClass("active");
+        });
+
+        // Call the event handler on #business
+        $("#business").hover(function(){
+          /* 
+          Hover alows a mouseenter and mouse leave event
+          seperated by a comma
+          */
+          
+          //Event one mouse enter add class
+          $("#business").addClass("active");
+        },
+          // Event two mouse out remove class               
+        function(){
+          $("#business").removeClass("active");
+        });
+
+        // Call the event handler on #business
+        $("#goal").hover(function(){
+          /* 
+          Hover alows a mouseenter and mouse leave event
+          seperated by a comma
+          */
+          
+          //Event one mouse enter add class
+          $("#goal").addClass("active");
+        },
+          // Event two mouse out remove class               
+        function(){
+          $("#goal").removeClass("active");
+        });
       });
     </script>
   </body>
