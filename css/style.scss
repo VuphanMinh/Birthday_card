@@ -3,6 +3,7 @@ $gray: #1F1F1F;
 $light-gray: #C4C4C4;
 $dark-gray: #e4e4e4;
 $white: #ffffff;
+$white-gray: #F9FCFF;
 $black: #000000;
 $blue: #004693;
 $blue-acl: #023670;
@@ -152,11 +153,6 @@ body {
     height: 60px !important;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-
-    @media screen and (min-width: 321px) and (max-width: 768px) {
-        width: 40px !important;
-        height: 40px !important;
-    }
 
     &::after {
          color: $white;
@@ -368,11 +364,11 @@ body {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 445px;
-        background: $white;
+        height: 378px;
+        background: #F9FCFF;
         border: 1px solid $light-gray;
         border-radius: 20px;
-        padding: 40px;
+        padding: 20px;
         margin-bottom: 40px;
 
         &:hover {
@@ -386,7 +382,7 @@ body {
         }
 
         & > img {
-            height: 100px;
+            height: 80px;
             margin-bottom: 20px;
 
             @media screen and (min-width: 321px) and (max-width: 768px) {  
@@ -395,9 +391,10 @@ body {
         }
 
         .about-wrap__card--title {
+            text-align: center;
             font-weight: 700;
-            font-size: 28px;
-            line-height: 36px;
+            font-size: 22px;
+            line-height: 30px;
             letter-spacing: -0.015em;
             color: $blue-black;
             margin-bottom: 20px;
@@ -410,6 +407,7 @@ body {
         }
 
         & > p {
+            text-align: center;
             font-weight: 400;
             font-size: 18px;
             line-height: 150%;
