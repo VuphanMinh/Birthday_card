@@ -322,6 +322,18 @@ body {
     line-height: 34px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-wrap .about-wrap__title > h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .about-wrap .about-wrap__title > h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .about-wrap .about-wrap__title > img {
     width: 126px;
@@ -338,6 +350,20 @@ body {
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .about-wrap .about-wrap__content {
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-wrap .about-wrap__content {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .about-wrap .about-wrap__content {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 120px;
   }
 }
 .about-wrap .about-wrap__content ul li span {
@@ -371,6 +397,18 @@ body {
     margin-bottom: 80px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-wrap .about-wrap__card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .about-wrap .about-wrap__card {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
 .about-wrap .about-wrap__card.active {
   background: #F9FCFF;
   border: 1px solid #C4C4C4;
@@ -391,6 +429,22 @@ body {
   margin-top: -4vw;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-wrap .about-wrap__card .about-wrap__card__icon {
+    position: relative;
+    transform: inherit;
+    left: 0;
+    margin-top: -14vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-wrap .about-wrap__card .about-wrap__card__icon {
+    position: relative;
+    transform: inherit;
+    left: 0;
+    margin-top: -14vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .about-wrap .about-wrap__card .about-wrap__card__icon {
     position: relative;
     transform: inherit;
@@ -420,6 +474,20 @@ body {
     line-height: 38px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-wrap .about-wrap__card .about-wrap__card--title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .about-wrap .about-wrap__card .about-wrap__card--title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 .about-wrap .about-wrap__card > p {
   text-align: center;
   font-weight: 400;
@@ -429,6 +497,20 @@ body {
   color: #1F1F1F;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .about-wrap .about-wrap__card > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-wrap .about-wrap__card > p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .about-wrap .about-wrap__card > p {
     font-weight: 400;
     font-size: 18px;
@@ -510,6 +592,20 @@ body {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .learning-wrap .learning-card {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .learning-wrap .learning-card {
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
 .learning-wrap .learning-card:hover {
   box-shadow: -10px -10px 20px #FAFBFF, 10px 10px 20px #A6ABBD;
   transition: all 0.5s ease;
@@ -519,6 +615,18 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .learning-wrap .learning-card .learning-card__sympoint {
+    height: 40px;
+    right: 10px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .learning-wrap .learning-card .learning-card__sympoint {
+    height: 40px;
+    right: 10px;
+  }
 }
 .learning-wrap .learning-card .learning-card__title {
   font-weight: 700;
@@ -533,6 +641,20 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .learning-wrap .learning-card .learning-card__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .learning-wrap .learning-card .learning-card__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 .learning-wrap .learning-card .learning-card__list-learn ul li {
@@ -550,11 +672,41 @@ body {
     line-height: 150%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .learning-wrap .learning-card .learning-card__list-learn ul li {
+    white-space: break-spaces;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .learning-wrap .learning-card .learning-card__list-learn ul li {
+    white-space: break-spaces;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
 .learning-wrap .learning-card .learning-card__content {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #1F1F1F;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .learning-wrap .learning-card .learning-card__content {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .learning-wrap .learning-card .learning-card__content {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
 }
 .learning-wrap .learning-card .learning-card__icon {
   height: 50px;
@@ -635,6 +787,16 @@ body {
     padding: 16px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-wrap .team-card .team-card__content .team-card__content--wrap {
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .team-wrap .team-card .team-card__content .team-card__content--wrap {
+    padding: 16px;
+  }
+}
 .team-wrap .team-card .team-card__content .team-card__content--title {
   font-weight: 600;
   font-size: 26px;
@@ -643,6 +805,20 @@ body {
   margin-bottom: 4px;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .team-wrap .team-card .team-card__content .team-card__content--title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-wrap .team-card .team-card__content .team-card__content--title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .team-wrap .team-card .team-card__content .team-card__content--title {
     font-weight: 600;
     font-size: 12px;
@@ -664,6 +840,22 @@ body {
     margin-bottom: 8px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-wrap .team-card .team-card__content .team-card__content--subtitle {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .team-wrap .team-card .team-card__content .team-card__content--subtitle {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    margin-bottom: 8px;
+  }
+}
 .team-wrap .team-card .team-card__content .team-card__content--detail {
   font-weight: 400;
   font-size: 18px;
@@ -671,6 +863,20 @@ body {
   color: #1F1F1F;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .team-wrap .team-card .team-card__content .team-card__content--detail {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-wrap .team-card .team-card__content .team-card__content--detail {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .team-wrap .team-card .team-card__content .team-card__content--detail {
     font-weight: 400;
     font-size: 9px;
@@ -688,12 +894,32 @@ body {
     height: 180px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-wrap .team-card .team-card__teacher {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .team-wrap .team-card .team-card__teacher {
+    height: 180px;
+  }
+}
 .team-wrap .team-card .team-card__teacher > img {
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .team-wrap .team-card .team-card__teacher > img {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .team-wrap .team-card .team-card__teacher > img {
+    height: 180px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .team-wrap .team-card .team-card__teacher > img {
     height: 180px;
   }
@@ -732,6 +958,16 @@ body {
     border-bottom-left-radius: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-wrap .contact-wrap__img > img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .contact-wrap .contact-wrap__img > img {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .contact-wrap .contact-wrap__img {
     width: 100%;
@@ -745,6 +981,19 @@ body {
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .contact-wrap .form-wrap {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .contact-wrap .form-wrap {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-wrap .form-wrap {
+    width: 100%;
     padding: 30px 20px;
   }
 }
@@ -762,6 +1011,25 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .contact-wrap .form-wrap .form-wrap__title {
+    width: 230px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-wrap .form-wrap .form-wrap__title {
+    width: 230px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 20px;
   }
 }
 .contact-wrap .form-wrap .form-wrap__title span {
@@ -773,6 +1041,16 @@ body {
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .contact-wrap .form-wrap .form-wrap__title > img {
     height: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-wrap .form-wrap .form-wrap__title > img {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .contact-wrap .form-wrap .form-wrap__title > img {
+    height: 80px;
   }
 }
 .contact-wrap .form-wrap > form {
@@ -790,6 +1068,18 @@ body {
     line-height: 22px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-wrap .form-wrap > form .form-group > label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .contact-wrap .form-wrap > form .form-group > label {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .contact-wrap .form-wrap > form .form-group .form-control__custom {
   height: 50px;
   background: rgba(184, 184, 184, 0.25);
@@ -797,6 +1087,18 @@ body {
   border: none;
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
+  .contact-wrap .form-wrap > form .form-group .form-control__custom {
+    width: 100%;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .contact-wrap .form-wrap > form .form-group .form-control__custom {
+    width: 100%;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .contact-wrap .form-wrap > form .form-group .form-control__custom {
     width: 100%;
     height: 50px;
