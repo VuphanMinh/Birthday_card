@@ -23,7 +23,7 @@ $orange: #FFA900;
 // ============== Settings responsive ===============
 $breakpoints: (
   'pc': 'screen and (min-width: 769px)',
-  'sp': 'screen and (min-width: 321px) and (max-width: 768px)',
+  'sp': 'screen and (min-width: 310px) and (max-width: 768px)',
   'mini-tablet': 'screen and (min-width: 768px) and (max-width: 1024px)',
   'tablet': 'screen and (min-width: 1025px) and (max-width: 1280px)'
 
@@ -928,15 +928,15 @@ body {
             z-index: 1;
 
             @include res_for(sp) {
-                height: 180px;
+                height: 160px;
             }
 
             @include res_for(mini-tablet) {
-                height: 180px;
+                height: 160px;
             }
 
             @include res_for(tablet) {
-                height: 180px;
+                height: 160px;
             }
 
             & > img {
@@ -944,15 +944,15 @@ body {
                 object-fit: cover;
 
                 @include res_for(sp) {
-                    height: 180px;
+                    height: 160px;
                 }
 
                 @include res_for(mini-tablet) {
-                    height: 180px;
+                    height: 160px;
                 }
     
                 @include res_for(tablet) {
-                    height: 180px;
+                    height: 160px;
                 }
             }
         }
