@@ -63,6 +63,20 @@ $breakpoints: (
     margin-top: 40px;
 }
 
+.btn-more {
+    margin-bottom: 40px !important;
+
+    @include res_for(sp) {
+        margin-bottom: 20px !important;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -187,6 +201,107 @@ body {
     }
 }
 
+.navbar-custom {
+    width: 100%;
+    border-radius: 100px;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include res_for(sp) {
+        border-radius: 40px;
+        padding: 8px 40px;
+    }
+
+    .navbar-custom__logo {
+        height: 50px;
+        object-fit: cover;
+
+        @include res_for(sp) {
+            height: 40px;
+        }
+
+        & > img {
+            height: 50px;
+
+            @include res_for(sp) {
+                height: 40px;
+            }
+
+        }
+    }
+
+    .navbar-custom__collapse {
+        flex-grow: 0;
+        @include res_for(sp) {
+            margin-top: 20px;
+        }
+
+        & > ul li {
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+
+            &.hotline {
+                background: none;
+
+                &:hover {
+                    background: none;
+                }
+            }
+
+            &:hover {
+                color: $white;
+                background: $blue;
+                border-radius: 40px;
+                transition: all 0.5s ease;
+
+                & > a { color: $white !important; }
+            }
+
+            &.active {
+                color: $white;
+                background: $blue;
+                border-radius: 40px;
+
+                & > a { color: $white !important; }
+            }
+        }
+    }
+}
+
+/* Style the list */
+ul.breadcrumb {
+    background: none;
+    padding: 10px 16px;
+    list-style: none;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\003E";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
 // =============== header ===============
 
 .header-wrap {
@@ -200,71 +315,10 @@ body {
     padding: 40px 0px;
     margin-bottom: 80px;
 
-    .navbar-custom {
-        width: 100%;
-        border-radius: 100px;
-        padding: 16px 40px;
-        display: flex;
-        justify-content: space-between;
-
-        @include res_for(sp) {
-            border-radius: 40px;
-            padding: 8px 40px;
-        }
-
-        .navbar-custom__logo {
-            height: 50px;
-            object-fit: cover;
-
-            @include res_for(sp) {
-                height: 40px;
-            }
-
-            & > img {
-                height: 50px;
-
-                @include res_for(sp) {
-                    height: 40px;
-                }
-    
-            }
-        }
-
-        .navbar-custom__collapse {
-            flex-grow: 0;
-            @include res_for(sp) {
-                margin-top: 20px;
-            }
-
-            & > ul li {
-                display: flex;
-                align-items: center;
-                padding: 0px 20px;
-
-                &.hotline {
-                    background: none;
-
-                    &:hover {
-                        background: none;
-                    }
-                }
-
-                &:hover {
-                    background: $blue;
-                    border-radius: 40px;
-                    transition: all 0.5s ease;
-
-                    & > a { color: $white; }
-                }
-
-                &.active {
-                    background: $blue;
-                    border-radius: 40px;
-
-                    & > a { color: $white; }
-                }
-            }
-        }
+    &.header-wrap__news {
+        background-image: url('../img/images/IMG-news-category.png');
+        padding: 20px 0px;
+        margin-bottom: 10px;
     }
 
     .header-wrap__content {
@@ -1131,6 +1185,145 @@ body {
         }
     }
 }
+
+// =============== News =================
+.news-wrap {
+    .news-wrap__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        color: $blue-deep;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        @include res_for(sp) {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        @include res_for(mini-tablet) {  
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        @include res_for(tablet) {  
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.cart-news {
+    padding: 10px;
+    margin-bottom: 40px;
+
+    @include res_for(sp) {
+        margin-bottom: 20px;
+    }
+
+    .cart-news__img-wrap {
+        width: 100%;
+        height: 269px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+
+        & > img {
+            width: 100%;
+            height: 269px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+
+    .cart-news__datetime {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .cart-news__datetime--status {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            background: #FFD6D6;
+            border-radius: 20px;
+            border: 1px solid $red;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: #E13434;
+            white-space: no-wrap;
+            padding: 5px 12px;
+            margin-right: 6px;
+
+            & > img {
+                height: 20px;
+                margin-right: 4px;
+            }
+        }
+
+        .cart-news__datetime--date {
+            display: flex;
+            align-items: center;
+
+            & > img {
+                width: 24px;
+                height: 24px;
+                margin-right: 6px;
+            }
+
+            & > span {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+                color: $blue-black;
+            }
+        }
+    }
+
+    .cart-news__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: $blue-black;
+        margin-bottom: 10px;
+    }
+
+    .cart-news__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $blue-black;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &:hover {
+        background: $white;
+        border-radius: 8px;
+        transition: all 0.5s ease;
+
+        .cart-news__img-wrap { 
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
 
 // =============== footer ===============
 
