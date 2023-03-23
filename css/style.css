@@ -82,9 +82,9 @@ body {
 }
 .btn-custom.btn-custom__register {
   width: 240px;
-  height: 65px;
+  height: 55px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 18px;
   color: #ffffff;
   background: #E89A01;
@@ -345,6 +345,11 @@ ul.breadcrumb li a:hover {
   font-size: 36px;
   line-height: 46px;
   margin-bottom: 20px;
+}
+.header-wrap .header-wrap__content .slogan-wrap h1.heading {
+  font-size: 26px;
+  line-height: 32px;
+  color: #023670;
 }
 @media screen and (min-width: 310px) and (max-width: 768px) {
   .header-wrap .header-wrap__content .slogan-wrap h1 {
@@ -1365,9 +1370,21 @@ ul.breadcrumb li a:hover {
   display: flex;
 }
 
+.heading-detail {
+  font-size: 24px;
+  line-height: 28px;
+}
+@media screen and (min-width: 310px) and (max-width: 768px) {
+  .heading-detail {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 .calendar-wrap {
   display: flex;
   align-items: center;
+  margin-right: 16px;
 }
 .calendar-wrap .calendar-wrap__icon {
   width: 24px;
@@ -1378,7 +1395,36 @@ ul.breadcrumb li a:hover {
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  color: #ffffff;
+  color: #6B7980;
+}
+
+.detail-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.detail-heading .detail-heading__authen {
+  display: flex;
+  align-items: center;
+}
+.detail-heading .detail-heading__authen .authen__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.detail-heading .detail-heading__authen .authen__img > img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.detail-heading .detail-heading__authen .authen__content {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #343434;
 }
 
 .content-wrap__detail {
@@ -1415,8 +1461,8 @@ ul.breadcrumb li a:hover {
 }
 .content-wrap__menu-left .menu-left__see-more {
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 20px;
   text-decoration: none;
   color: #004693;
 }

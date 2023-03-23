@@ -118,9 +118,9 @@ body {
 
     &.btn-custom__register {
         width: 240px;
-        height: 65px;
+        height: 55px;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 18px;
         color: $white;
         background: #E89A01;
@@ -399,6 +399,12 @@ ul.breadcrumb {
                 font-size: 36px;
                 line-height: 46px;
                 margin-bottom: 20px;
+
+                &.heading {
+                    font-size: 26px;
+                    line-height: 32px;
+                    color: $blue-acl;
+                }
 
                 @include res_for(sp) {
                     font-weight: 700;
@@ -1414,9 +1420,20 @@ ul.breadcrumb {
 }
 
 // ============================================================ News Details =============================================================================
+.heading-detail {
+    font-size: 24px;
+    line-height: 28px;
+
+    @include res_for(sp) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
 .calendar-wrap {
     display: flex;
     align-items: center;
+    margin-right: 16px;
 
     .calendar-wrap__icon {
         width: 24px;
@@ -1428,7 +1445,39 @@ ul.breadcrumb {
         font-weight: 500;
         font-size: 18px;
         line-height: 18px;
-        color: $white;
+        color: #6B7980;
+    }
+}
+
+.detail-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    .detail-heading__authen {
+        display: flex;
+        align-items: center;
+
+        .authen__img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+
+            & > img {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .authen__content {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #343434;
+        }
     }
 }
 
@@ -1470,8 +1519,8 @@ ul.breadcrumb {
 
     .menu-left__see-more {
         font-weight: 600;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 18px;
+        line-height: 20px;
         text-decoration: none;
         color: #004693;
 
