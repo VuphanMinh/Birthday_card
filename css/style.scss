@@ -378,7 +378,7 @@ ul.breadcrumb {
     &.header-wrap__news {
         background-image: url('../img/images/IMG-news-category.png');
         padding: 20px 0px;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
     }
 
     .header-wrap__content {
@@ -1473,10 +1473,20 @@ ul.breadcrumb {
         }
 
         .authen__content {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 17px;
-            color: #343434;
+            .authen__content--name {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #343434;
+            }
+
+            & > span {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #343434;
+            }
+
         }
     }
 }

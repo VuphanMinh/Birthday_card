@@ -324,7 +324,7 @@ ul.breadcrumb li a:hover {
 .header-wrap.header-wrap__news {
   background-image: url("../img/images/IMG-news-category.png");
   padding: 20px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .header-wrap .header-wrap__content {
   display: flex;
@@ -1420,8 +1420,14 @@ ul.breadcrumb li a:hover {
      object-fit: cover;
   border-radius: 50%;
 }
-.detail-heading .detail-heading__authen .authen__content {
+.detail-heading .detail-heading__authen .authen__content .authen__content--name {
   font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #343434;
+}
+.detail-heading .detail-heading__authen .authen__content > span {
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #343434;
